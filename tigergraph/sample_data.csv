@@ -1,0 +1,4 @@
+"patient_id","patient_name","symptom","disease","treatment"
+"P001","John Doe","Fever","Flu","Rest"
+"P001","John Doe","Cough","Flu","Hydration"
+"P002","Jane Smith","Headache","Migraine","Painkiller"
