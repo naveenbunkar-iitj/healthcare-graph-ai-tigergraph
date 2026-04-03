@@ -1,0 +1,9 @@
+CREATE QUERY predictDisease(STRING patientId) FOR GRAPH HealthcareGraph {
+
+  Start = {Patient.*};
+  Result = SELECT d
+           FROM Start:p -(HAS_SYMPTOM)-> Symptom:s -(INDICATES)-> Disease:d
+           WHERE p.id == patientId;
+
+  PRINT Result;
+}
